@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Horizontal drag"-->
+            <!--android:id="@+id/buttonDragH"-->
+            <!--/>-->
+
+    <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Vertical drag"-->
+            <!--android:id="@+id/buttonDragV"-->
+            <!--/>-->
+
+    <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Edge drag"-->
+            <!--android:id="@+id/buttonDragEdge"-->
+            <!--/>-->
+
+    <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Capture drag"-->
+            <!--android:id="@+id/buttonDragCapture"-->
+            <!--/>-->
+
+    <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Youtube layout"-->
+            <!--android:id="@+id/buttonYoutube"-->
+            <!--/>-->
+    <com.dattran.viewdraghelper.pedrovgs.DraggableView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:draggable_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/draggable_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        draggable_view:top_view_id="@+id/top_panel"
+        draggable_view:bottom_view_id="@+id/lv_episodes"
+        draggable_view:top_view_margin_right="10dp"
+        draggable_view:top_view_margin_bottom="10dp"
+        draggable_view:top_view_resize="true"
+        >
+
+        <!-- ListView Episodes -->
+
+        <ListView
+            android:id="@+id/lv_episodes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/iv_fan_art"
+            android:entries="@array/lsview"
+            />
+
+        <!-- TvShow Fan Art -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/top_panel"
+            >
+        <VideoView
+            android:id="@+id/iv_fan_art"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            />
+        </RelativeLayout>
+    </com.dattran.viewdraghelper.pedrovgs.DraggableView>
+</LinearLayout>

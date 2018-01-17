@@ -1,0 +1,36 @@
+<FrameLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:tag="list" />
+
+    <com.dattran.viewdraghelper.DragHelper.YoutubeLayout
+        android:id="@+id/dragLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/green_new"
+            android:scaleType="fitXY"
+            />
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FF00FF"
+            android:gravity="center"
+            android:tag="desc"
+            android:text="Loreum Loreum Loreum Loreum Loreum Loreum LoreumLoreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum"
+            android:textColor="@android:color/white"
+            android:textSize="35sp" />
+    </com.dattran.viewdraghelper.DragHelper.YoutubeLayout>
+</FrameLayout>
